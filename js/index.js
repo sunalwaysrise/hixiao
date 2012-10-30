@@ -5,6 +5,7 @@ $(function (){
 	$(".logOther").hover(function(){$(".logOthers").show()},function(){$(".logOthers").hide()})
 	$(".selectArea").bind("click",show);
 	$(".closeArea").bind("click",close);
+        $(window).resize(setCenter());
 	function show(){
 		$(this).unbind("click");
 		if($(".layoutBg").not("visible")){

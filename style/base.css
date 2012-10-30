@@ -4,7 +4,7 @@ body,a,strong,input,select,button,h1,h2,h3,h4,h5,h6,p{font-size:14px}
 body,html{height:100%}
 a:link{text-decoration:none}
 a:visited{text-decoration:none}
-a:hover{text-decoration:underline}
+a:hover{text-decoration:none}
 a:active{text-decoration:none}
 img{border:0}
 div,p{display:block}
@@ -13,43 +13,50 @@ ul,dl,ol{list-style:none}
 .clear{clear:both;line-height:0%}
 body{background:#F0F0F0}
 .center{width:950px;margin:0 auto}
-.header{width:100%;height:35px;position:relative;background:#3B3A38}
+.header{width:100%;height:35px;position:relative;background:#3B3A38;min-width:950px}
+.layoutBg{display:none;width:100%;height:100%;position:absolute;background:#ddd;filter:alpha(opacity=80);opacity:0.8;left:0;top:0}
+.layFrame{display:none;width:500px;height:200px;position:absolute;border:5px #fff solid;background:#3B3A38}
 .top{width:950px;height:35px;}
 .nav{width:649px;height:35px;padding-left:1px;float:left}
 .nav a{padding-right:30px;line-height:35px;color:#fff}
 .states{width:240px;padding:0 1px 0 59px;height:35px;line-height:35px;float:left}
 .states a{color:#fff}
 .logOther{width:120px;height:35px;float:left;position:relative}
+.logOthers{display:none;width:96px;height:101px;position:absolute;top:35px;left:0;z-index:99;background:;}/*Spriter*/
+.logOthers li{width:96px;height:23px;line-height:23px;float:left;text-align:left}
+.logOthers li a{color:#666;text-indent:20px}
 .topLogin{width:70px;height:35px;float:left;}
-.logOther,.topLogin{background:url()  no-repeat right center}/*Spriter*/
-.topReg,.topLogOut{width:50px;height:35px;float:left}
+.logOther,.topLogin{text-align:center;background:no-repeat right center}/*Spriter*/
+.topReg,.topLogOut{width:50px;height:35px;float:left;text-align:right}
 .logo{width:950px;height:64px;}
-.logos{width:211px;height:64px;float:left;background:url()}/*Spriter*/
+.logos{width:211px;height:64px;float:left;background;}/*Spriter*/
 .selectArea{width:100px;height:64px;float:left;padding-left:4px}/*Spriter*/
-.banner{width:950px;position:relative;height:390px}
-.banner li{width:950px;position:absolute;height:390px}
+.banner{width:950px;position:relative;height:390px;overflow:hidden}
+.banner ul{width:5000px;height:390px;position:absolute;}
+.banner ul li{width:950px;float:left;height:390px;}
 .bannerNav{height:10px;text-align:center}
-.bannerNav a{width:10px;height:10px;margin-right:12px;background:url()}/*Spriter*/
-.bannerNavHover{background:url()}/*Spriter*/
+.bannerNav a{width:10px;height:10px;margin-right:12px;background;}/*Spriter*/
+.bannerNavHover{background;}/*Spriter*/
 .categotyNav{height:85px;padding-bottom:40px;}
 .categotyNav li{width:220px;height:85px;float:left;padding-left:90px}
 .categotyNav li p{font-size:25px;line-height:50px;}
 .categotyNav li span{line-height:20px;}
 .event,.talking,.regLogWb{width:310px;float:left}
 .event dt,.talking dt{width:310px;height:20px;}
-.event dd{width:280px;height:38px;margin-bottom:5px;padding-left:30px;line-height:30px;background:#F7F6F6  url()}/*Spriter*/
+.event dd{width:280px;height:38px;margin-bottom:5px;padding-left:30px;line-height:30px;background:#F7F6F6 }/*Spriter*/
 .talking dd{width:310px;height:74px;float:left;padding-top:10px;overflow:hidden}
 .miniHead{width:50px;height:50px;margin-right:10px;margin-bottom:35px;float:left;overflow:hidden;}
 .talking dd p{width:250px;height:50px;float:left;overflow:hidden;}
 .talking dd p em{color:#4390C8;font-style:normal}
 .talking dd span{color:#767676}
-.regLogWb{padding-top:30px;height:333px;text-align:center;background:#F7F6F6 url()}/*Spriter*/
+.regLogWb{padding-top:30px;height:333px;text-align:center;background:#F7F6F6}/*Spriter*/
 .slideLog,.slideReg{width:112px;height:49px;float:left;display:inline}
 .slideLog{margin-left:29px;padding-right:13px;border-right:1px #DCDCDC solid}
 .slideReg{margin-left:14px}
 
-.footer{width:100%;height:100px;background:#3B3A38 url()}/*Spriter*/
-.contact{height:100px;width:865px;padding-left:85px;background:  url()}/*Spriter*/
+.footer{width:100%;height:100px;min-width:950px;background:#3B3A38 }/*Spriter*/
+.copy{height:30px;text-align:right;line-height:30px;color:#707070}
+.contact{height:100px;width:865px;padding-left:85px;background;}/*Spriter*/
 .tel{width:241px;height:54px;float:left}
 .about{width:624px;height:54px;float:left;}
 .about li{width:60px;height:30px;line-height:30px;padding-top:24px;padding-left:26px;float:right}

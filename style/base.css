@@ -30,7 +30,7 @@ body{background:#F0F0F0}
 .topReg,.topLogOut{width:50px;height:35px;float:left;text-align:right}
 .logo{width:950px;height:64px;}
 .logos{width:211px;height:64px;float:left;background;}/*Spriter*/
-.selectArea{width:100px;height:64px;float:left;padding-left:4px}/*Spriter*/
+.selectArea{width:100px;height:64px;float:left;padding-left:4px;cursor:pointer}/*Spriter*/
 .banner{width:950px;position:relative;height:480px;overflow:hidden}
 .container{width:950px;height:390px;}
 .container li{width:950px;height:390px;}

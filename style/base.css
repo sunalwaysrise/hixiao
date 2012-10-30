@@ -15,7 +15,7 @@ body{background:#F0F0F0}
 .center{width:950px;margin:0 auto}
 .header{width:100%;height:35px;position:relative;background:#3B3A38;min-width:950px}
 .layoutBg{display:none;width:100%;height:100%;position:absolute;background:#ddd;filter:alpha(opacity=80);opacity:0.8;left:0;top:0}
-.layFrame{display:none;width:500px;height:200px;position:absolute;border:5px #fff solid;background:#3B3A38}
+.layFrame{display:none;width:500px;height:200px;position:absolute;border:5px #fff solid;background:#3B3A38;z-index:999}
 .top{width:950px;height:35px;}
 .nav{width:649px;height:35px;padding-left:1px;float:left}
 .nav a{padding-right:30px;line-height:35px;color:#fff}
@@ -31,12 +31,14 @@ body{background:#F0F0F0}
 .logo{width:950px;height:64px;}
 .logos{width:211px;height:64px;float:left;background;}/*Spriter*/
 .selectArea{width:100px;height:64px;float:left;padding-left:4px}/*Spriter*/
-.banner{width:950px;position:relative;height:390px;overflow:hidden}
-.banner ul{width:5000px;height:390px;position:absolute;}
-.banner ul li{width:950px;float:left;height:390px;}
-.bannerNav{height:10px;text-align:center}
-.bannerNav a{width:10px;height:10px;margin-right:12px;background;}/*Spriter*/
+.banner{width:950px;position:relative;height:480px;overflow:hidden}
+.container{width:950px;height:390px;}
+.container li{width:950px;height:390px;}
+.bannerNav{width:100px;height:10px;margin:0 auto 40px}
+.bannerNav li{float:left;width:10px;height:10px;overflow:hidden;margin-right:12px}
+.bannerNav li a{width:10px;height:10px;overflow:hidden;background;}/*Spriter*/
 .bannerNavHover{background;}/*Spriter*/
+
 .categotyNav{height:85px;padding-bottom:40px;}
 .categotyNav li{width:220px;height:85px;float:left;padding-left:90px}
 .categotyNav li p{font-size:25px;line-height:50px;}

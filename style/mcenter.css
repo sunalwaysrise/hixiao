@@ -1,0 +1,10 @@
+﻿@charset "utf-8";
+.mCenter{background:#fff}
+.mCenterHeader{width:930px;height:100px;float:left;padding:10px;margin-bottom:5px;background:;}/*Spriter*/
+.mCenterAside{width:190px;height:100%;float:left;overflow:hidden}
+.mCenterContenet{width:710px;overflow:hidden}
+.mCenterTitle{width:710px;height:40px;}
+.mCenterContenets{}
+
+
+

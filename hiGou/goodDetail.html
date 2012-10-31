@@ -5,12 +5,12 @@
 <title></title>
 <meta name="Description" content="" />
 <meta name="Keywords" content="" />
-<link type="text/css" rel="stylesheet" href="style/base.css"/>
-<link type="text/css" rel="stylesheet" href="style/detail.css"/>
-<link type="text/css" rel="stylesheet" href="style/v.css"/>
-<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
-<script type="text/javascript" src="js/slides.js"></script>
+<link type="text/css" rel="stylesheet" href="../style/base.css"/>
+<link type="text/css" rel="stylesheet" href="../style/detail.css"/>
+<link type="text/css" rel="stylesheet" href="../style/v.css"/>
+<script type="text/javascript" src="../js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+<script type="text/javascript" src="../js/slides.js"></script>
 </head>
 <body>
 <div class="header mBottom">
@@ -34,10 +34,15 @@
   <div class="logos"></div><span class="selectArea"></span>
   <div class="searchArea"><input type="text" class="searchInput" value=""/><input type="submit" class="searchGoods" value="搜商品"/><input type="submit" class="searchShops" value="搜店铺"/></div>
 </div>
-<ul class="center nav2">
-  <li><a>嗨购首页</a></li><li><a>排行榜</a></li><li><a>优惠折扣</a></li><li><a>优惠劵</a></li><li><a>看图购物</a></li>
-</ul>
-<div class="center mBottom chartBanner">
+<ul class="center nav2"><li><a>嗨购首页</a></li><li><a>排行榜</a></li><li><a>优惠折扣</a></li><li><a>优惠劵</a></li><li><a>看图购物</a></li></ul>
+<div class="center nav3"><a href="#">嗨购首页</a><a href="#">排行榜</a><a href="#">女装</a></div>
+
+
+<div class="center page mBottom2">
+  <a class="next">下一页</a>
+  <a class="pageList">2</a>
+  <a class="pageList">1</a>
+  <a class="pre">上一页</a>
 </div>
 <div class="footer">
   <div class="center contact">
@@ -56,6 +61,12 @@
 <div class="layoutBg"></div>
 <div class="layFrame closeArea"></div>
 <div class="goTop"></div>
-<div class="quickContact"></div>
+<script type="text/javascript" src="../js/masonry.min.js"></script>
+<script type="text/javascript">
+$('#falls').masonry({
+  itemSelector: '.box',
+  columnWidth: 230,
+  gutterWidth:10
+});</script> 
 </body>
 </html>

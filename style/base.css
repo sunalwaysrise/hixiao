@@ -1,6 +1,6 @@
 ﻿@charset "utf-8";
 *{margin:0;padding:0}
-body,a,strong,input,select,button,h1,h2,h3,h4,h5,h6,p{font-size:14px}
+body,a,strong,input,select,button,h1,h2,h3,h4,h5,h6,p{font-size:12px}
 body,html{height:100%}
 a:link{text-decoration:none}
 a:visited{text-decoration:none}

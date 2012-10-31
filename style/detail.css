@@ -36,3 +36,32 @@
 .quickContact{width:120px;height:220px;right:0;z-index:999;position:absolute;background:black}
 .goTop{width:40px;height:64px;position:fixed;bottom:0;right:0;z-index:998;background:#ddd}
 
+.fallsTop{width:940px;padding:10px 0 10px 10px;background:#fff}
+.fallsTopTitle{width:940px;height:50px;text-align:center;line-height:50px;float:left}
+.fallsTopContent{width:940px;height:auto;float:left}
+.fallsTopContent li{width:210px;padding-right:10px;height:90px;float:left;overflow:hidden}
+.fallsTopContent li h3{width:210px;height:30px;padding-top:10px;float:left; font-weight:normal}
+.fallsTopContent li .fallsTopContentImg{width:50px;height:50px;float:left;overflow:hidden;}
+.fallsTopContent li p{width:150px;height:50px;float:left;overflow:hidden;line-height:23px}
+.fallsTopContent li p a{padding-right:15px}
+.categoryTitle{height:40px;margin-bottom:2px;background:#fff}
+.categoryTitle b{padding:0 55px 0 32px; line-height:40px; float:left;width:auto}
+.sort{line-height:40px;width:84px;float:left;text-indent:20px;background:;}/*Spriter*/
+
+.box{background:#fff;width:210px;padding:10px;margin-bottom:10px;overflow:hidden;color:#333; font-size:12px}
+.boxImg{width:210px;float:left}
+.box h2{width:210px;line-height:26px;float:left;border-bottom:1px #C6C6C6 dotted}
+.box h2 a{color:#333;font-weight: normal; font-size:12px}
+.box .price{width:210px; height:27px;line-height:27px; float:left;overflow:hidden}
+.box .price span{width:60px;height:27px;float:left;color:#FF0000}
+.box .price var{width:150px;height:27px;float:left;text-align:right;font-style:normal}
+.box .price var em{font-style:normal}
+.page{height:40px;background:#fff}
+.page .next,.page .pre{width:110px;height:40px;line-height:40px;margin-left:5px;float:right;background:#4390C8;text-align:center;color:#fff}
+.page .pageList{float:right;width:30px;height:30px;margin:4px 0 0 5px; border:1px #F0F0F0 solid; text-align:center; line-height:30px}
+.page .next{}
+.page .pre{}
+
+.chartBanner{}
+
+

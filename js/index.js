@@ -5,7 +5,7 @@ $(function (){
 	$(".logOther").hover(function(){$(".logOthers").show()},function(){$(".logOthers").hide()})
 	$(".selectArea").bind("click",show);
 	$(".closeArea").bind("click",close);
-        $(window).resize(setCenter());
+    $(window).resize(setCenter);
 	function show(){
 		$(this).unbind("click");
 		if($(".layoutBg").not("visible")){
@@ -26,7 +26,17 @@ $(function (){
 	$("#slides").slides({
         preload: true,play: 5000,pause: 2500,hoverPause: true,container: 'container', paginationClass: 'bannerNav',currentClass: 'bannerNavHover'
     });
-    $(".bannerNav li a").html("")
+    $("#slides2").slides({
+        preload: true,play: 5000,pause: 2500,hoverPause: true,container: 'container2', paginationClass: 'bannerNav2',currentClass: 'bannerNavHover2'
+    });
+    $(".bannerNav li a,.bannerNav2 li a").html("")
+    
+    setPosition()
+    $(window).resize(setPosition);
+    $(window).bind("scroll",setPosition)
+    function setPosition(){
+    	var windowHeight = document.documentElement.clientHeight;
+    	$(".quickContact").css({"top": windowHeight/2,})
+    }
 })
-
 

@@ -9,7 +9,7 @@
 <link type="text/css" rel="stylesheet" href="../style/mcenter.css"/>
 <link type="text/css" rel="stylesheet" href="../style/v.css"/>
 <script type="text/javascript" src="../js/jquery-1.8.2.min.js"></script>
-<script type="text/javascript" src="../js/index.js"></script>
+<script type="text/javascript" src="../js/mcenter.js"></script>
 </head>
 <body>
 <div class="header mBottom">
@@ -35,10 +35,33 @@
 </div>
 <div class="center mBottom2 mCenter">
   <div class="mCenterHeader"></div>
-  <div class="mCenterAside mRight3"></div>
+  <div class="mCenterAside mRight3">
+    <div class="asideTitle">个人设置</div>
+    <dl class="asideNav">
+      <dt>个人资料</dt>
+      <dd><a>基本资料</a></dd>
+      <dd><a>修改头像</a></dd>
+      <dd><a>修改密码</a></dd>
+      <dd><a>账户关联</a></dd>
+    </dl>
+  </div>
   <div class="mCenterContenet">
-    <div class="mCenterTitle"></div>
-    <div class="mCenterContenets"></div>
+    <div class="mCenterTitle">基本资料</div>
+    <div class="mCenterContenets2">
+      <div class="mCenterContenets2Img mRight2">
+        <div class="mCenterContenets2ImgT">当前头像</div>
+        <div class="mCenterContenets2ImgC"><img src="" alt="" class="mCenterContenets2Imgs" /></div>
+      </div>
+      <div class="mCenterContenetChange">
+        <div class="mCenterContenetChangeT">更新</div>
+        <div class="upLoad"></div>
+        <span class="upLoadTxt"></span>
+        <div class="headerPreserve">
+          <img src="" alt="" class="mRight"/>
+          <input type="submit" value="保存头像"  class="headerPreserveI  inputStyle3"/>
+        </div>
+      </div>
+    </div>
   </div>
 <div class="clear"></div>
 </div>

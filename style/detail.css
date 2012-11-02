@@ -34,17 +34,31 @@
 
 .fallsTop{width:940px;padding:10px 0 10px 10px;background:#fff}
 .fallsTopTitle{width:940px;height:50px;text-align:center;line-height:50px;float:left}
-.fallsTopContent{width:940px;height:auto;float:left}
-.fallsTopContent li{width:210px;padding-right:10px;height:90px;float:left;overflow:hidden}
-.fallsTopContent li h3{width:210px;height:30px;padding-top:10px;float:left; font-weight:normal}
-.fallsTopContent li .fallsTopContentImg{width:50px;height:50px;float:left;overflow:hidden;}
-.fallsTopContent li p{width:150px;height:50px;float:left;overflow:hidden;line-height:23px}
-.fallsTopContent li p a{padding-right:15px}
-.categoryTitle,.categoryTitle2{height:40px;margin-bottom:2px;background:#fff}
+.fallsTopContent{width:940px;height:160px;float:left;overflow:hidden;position:relative}
+.fallsTopContent #fallsTopContent{height:160px;position:absolute}
+.fallsTopContent #fallsTopContent li{width:235px;height:160px;float:left;overflow:hidden}
+.fallsTopContent #fallsTopContent li h3{width:210px;height:30px;padding-top:10px;float:left; font-weight:normal}
+.fallsTopContent #fallsTopContent li .fallsTopContentImg{width:50px;height:50px;float:left;overflow:hidden}
+.fallsTopContent #fallsTopContent li p{width:150px;height:50px;float:left;overflow:hidden;line-height:23px}
+.fallsTopContent #fallsTopContent li p a{padding-right:15px}
+
+
+.categoryTitle,.categoryTitle2{height:40px;margin-bottom:2px;}
 .categoryTitle b,.categoryTitle2 b{padding:0 55px 0 32px; line-height:40px; float:left;width:auto}
 .categoryTitle2{background:none}
 
 .sort{line-height:40px;width:84px;float:left;text-indent:20px;background:;}/*Spriter*/
+.sortPrice{width:305px;height:22px;float:left;margin-top:8px; line-height:22px}
+.sortPrice a{height:22px; float:left; text-align:center}
+.price0{width:50px;}
+.price1{width:50px;}
+.price2{width:63px}
+.price3{width:65px}
+.price4{width:76px;}
+.sortPriceInput{width:140px;height:22px; line-height:22px;padding-left:8px;margin-top:8px;float:left;overflow:hidden}
+.priceNum{width:40px; height:20px; border:1px #fff solid; background:none; margin-right:5px; outline:none}
+.sortPriceSearch{width:42px;height:22px;border:none;background:;}
+
 
 .box{background:#fff;width:210px;padding:10px;margin-bottom:10px;overflow:hidden;color:#333; font-size:12px}
 .boxImg{width:210px;float:left}
@@ -54,13 +68,13 @@
 .box .price span{width:60px;height:27px;float:left;color:#FF0000}
 .box .price var{width:150px;height:27px;float:left;text-align:right;font-style:normal}
 .box .price var em{font-style:normal}
-.page{height:40px;background:#fff}
-.page .next,.page .pre{width:110px;height:40px;line-height:40px;margin-left:5px;float:right;background:#4390C8;text-align:center;color:#fff}
-.page .pageList{float:right;width:30px;height:30px;margin:4px 0 0 5px; border:1px #F0F0F0 solid; text-align:center; line-height:30px}
-.page .next{}
-.page .pre{}
 
 .chartBanner{height:310px;padding:10px;width:930px!important;overflow:hidden;background:#fff}
+.chartBanners{height:310px;width:930px;position:relative;float:left;overflow:hidden}
+.chartBanners #fallsTopContent{height:310px;position:absolute}
+.chartBanners #fallsTopContent li{width:155px;height:310px;float:left;overflow:hidden}
+.chartBanners #fallsTopContent li a{width:154px;height:154px;border:1px #fff solid;border-left:0;border-top:0}
+
 .chart{width:930px;padding:10px;height:215px;background:#fff}
 .chartTitle{width:930px;height:30px;float:left;line-height:30px;text-indent:10px}
 .chartGoods{width:724px;height:185px;float:left;overflow:hidden}
@@ -92,4 +106,30 @@
 .chartDetailContents h3{height:30px;line-height:30px;font-size:14px}
 .chartDetailContentShare{width:686px;height:30px;border-top:1px #C6C6C6 dotted}
 
+.goodDetail{width:930px!important; height:420px; padding:10px; overflow:hidden; background:#fff}
+.goodImg{width:420px; height:420px;float: left;margin-right:40px; overflow:hidden}
+.goodDetail h2{ width:460px; height:40px;float:left}
+.goodDetail .goodDetailPrice{ width:460px;height:60px; padding-top:10px;float:left}
+.goodDetail .goodDetailEvent{ width:460px;height:33px; padding-top:10px;float:left}
+.goodDetail .goodDetailShare{ width:460px;height:40px; margin-bottom:10px;float:left}
+.goodDetailName{ width:460px;border-top:1px #ddd solid;float:left}
+.goodDetailName li{width:460px;height:33px; border-bottom:1px #C6C6C6 solid; float:left}
+.goodDetailNameIco{ width:30px; height:30px; float:left; margin:2px 7px 0 0; overflow:hidden}
+.goodDetailName li b{ padding-top:12px; width:400px; float:left;}
+.goodDetailName li div{width:230px; height:33px; float:left; line-height:33px}
+.detailContent{width:710px;float:left}
+.detailComment{ width:710px; background:#fff; padding-bottom:10px}
+.detailComment dt{width:710px;height:40px;line-height:40px;border-bottom:1px #F0F0F0 solid;text-indent:10px;}
+.detailComment dd{width:690px;height:50px;padding:10px 0;margin:0 10px;border-bottom:1px #C6C6C6 dotted;overflow:hidden}
 
+#youMayLike{width:710px; }
+.detailAside{width:210px; padding:10px; background:#fff; float: left}
+.detailAside li{width:210px; height:250px; padding-bottom:10px; float:left; overflow:hidden}
+
+.title3{height:40px;line-height:40px;font-weight:bold;text-indent:5px;background:}
+.content3{width:880px;float:left; padding:10px 30px 20px 40px; overflow:hidden; background:#fff;}
+.content3 p{width:660px;line-height:22px;float:left}
+.content3 p b{color:#4390C8;padding-right:15px}
+.content3 em{width:210px;line-height:22px;float:left;font-style:normal;text-align:right}
+.content3List{width:870px; height:95px; float:left}
+.content3List a{width:210px; height:95px; float:left; overflow:hidden; margin-right:10px}

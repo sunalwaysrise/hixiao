@@ -40,3 +40,40 @@ $(function (){
     }
 })
 
+function preNext(config){
+  $(function(){
+	var ww=$("#fallsTopContent li").width();
+    var len=$("#fallsTopContent li").length;
+    $("#fallsTopContent").css({"width":ww*len})
+    $(".pre").bind("click",ppp)
+    $(".next").bind("click",nnn)
+    function ppp(){
+    	$(".pre").unbind("click");
+    	//$(".next").unbind("click");
+    	var curPosition=$("#fallsTopContent").css("left");
+    	curPosition=parseInt(curPosition)
+    	if(curPosition<0){
+    		$("#fallsTopContent").animate({"left":curPosition+ww},function(){
+    			$(".pre").bind("click",ppp);
+    			$(".next").bind("click",nnn);
+    		})
+    	}
+    }
+    function nnn(){
+    	//$(".pre").unbind("click");
+    	$(".next").unbind("click");
+    	var curPosition=$("#fallsTopContent").css("left");
+    	if(curPosition=="auto"){curPosition=0}
+    	curPosition=parseInt(curPosition)
+    	if(curPosition>-ww*len+(ww*config)){
+    		$("#fallsTopContent").animate({"left":curPosition-ww},function(){
+    			//alert("s")
+    			$(".pre").bind("click",ppp);
+    			$(".next").bind("click",nnn);
+    		})
+    	}
+    }
+  })
+}
+
+

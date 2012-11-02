@@ -6,12 +6,10 @@
 <meta name="Description" content="" />
 <meta name="Keywords" content="" />
 <link type="text/css" rel="stylesheet" href="../style/base.css"/>
-<link type="text/css" rel="stylesheet" href="../style/detail.css"/>
+<link type="text/css" rel="stylesheet" href="../style/mcenter.css"/>
 <link type="text/css" rel="stylesheet" href="../style/v.css"/>
 <script type="text/javascript" src="../js/jquery-1.8.2.min.js"></script>
-<script type="text/javascript" src="../js/index.js"></script>
-<script type="text/javascript" src="../js/slides.js"></script>
-<script type="text/javascript">$(function(){preNext(6)})</script>
+<script type="text/javascript" src="../js/mcenter.js"></script>
 </head>
 <body>
 <div class="header mBottom">
@@ -35,40 +33,40 @@
   <div class="logos"></div><span class="selectArea"></span>
   <div class="searchArea"><input type="text" class="searchInput" value=""/><input type="submit" class="searchGoods" value="搜商品"/><input type="submit" class="searchShops" value="搜店铺"/></div>
 </div>
-<ul class="center nav2">
-  <li><a>嗨购首页</a></li><li><a>排行榜</a></li><li><a>优惠折扣</a></li><li><a>优惠劵</a></li><li><a>看图购物</a></li><li><em class="pre">pre</em></li><li><em class="next">next</em></li>
-</ul>
-<div class="center mBottom chartBanner">
-  <div class="chartBanners">
-  <ul id="fallsTopContent">
-    <li><a>1</a><a></a></li>
-    <li><a>2</a><a></a></li>
-    <li><a>3</a><a></a></li>
-    <li><a>4</a><a></a></li>
-    <li><a>5</a><a></a></li>
-    <li><a>6</a><a></a></li>
-    <li><a>7</a><a></a></li><li><a>7</a><a></a></li><li><a>7</a><a></a></li><li><a>7</a><a></a></li>
-  </ul>
+<div class="center mBottom2 mCenter">
+  <div class="mCenterHeader"></div>
+  <div class="mCenterAside mRight3">
+    <div class="asideTitle">个人设置</div>
+    <dl class="asideNav">
+      <dt>个人资料</dt>
+      <dd><a>基本资料</a></dd>
+      <dd><a>修改头像</a></dd>
+      <dd><a>修改密码</a></dd>
+      <dd><a>账户关联</a></dd>
+    </dl>
   </div>
-</div>
-<div class="center chart mBottom">
-  <h2 class="chartTitle"></h2>
-  <ul class="chartGoods">
-    <li><a><img src="" alt="" class="chartGoodsImg"/></a><h3><a><span class="font3">TOP1</span>店铺名称</a></h3></li>
-    <li><a><img src="" alt="" class="chartGoodsImg"/></a><h3><a><span class="font3">TOP1</span>店铺名称</a></h3></li>
-    <li><a><img src="" alt="" class="chartGoodsImg"/></a><h3><a><span class="font3">TOP1</span>店铺名称</a></h3></li>
-    <li><a><img src="" alt="" class="chartGoodsImg"/></a><h3><a><span class="font3">TOP1</span>店铺名称</a></h3></li>
-  </ul>
-  <ul class="chartShops">
-    <li><a><span class="font3">TOP1</span>店铺名称</a></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ul>
-</div>
+  <div class="mCenterContenet">
+    <div class="mCenterTitle mBottom">我的收藏</div>
+    <div id="myCollect">
+  <div class="box">
+    <a class="boxImg"><img src="" alt=""/></a>
+    <h2><a href="#">异域风情夏日海岸热带鱼造型装饰碟...</a></h2>
+    <div class="price"><span>￥:36.5</span><var>已成交<em>2345</em>笔</var></div>
+  </div>
+  <div class="box">sssssssssss</div>
+  <div class="box">sssssssssss<br/>sssssssssss<br/>sssssssssss<br/>sssssssssss</div>
+  <div class="box">sssssssssss</div>
+  <div class="box">sssssssssss<br/>sssssssssss<br/>sssssssssss<br/>sssssssssss<br/>sssssssssss<br/>sssssssssss<br/>sssssssssss</div>
+  <div class="box">sssssssssss<br/>sssssssssss</div>
+  <div class="box">sssssssssss<br/>sssssssssss<br/>sssssssssss<br/>sssssssssss</div>
+  <div class="box">sssssssssss<br/>sssssssssss</div>
+  <div class="box">sssssssssss<br/>sssssssssss<br/>sssssssssss</div>
+  <div class="box">sssssssssss<br/>sssssssssss<br/>sssssssssss<br/>sssssssssss</div>
 
+    </div>
+  </div>
+<div class="clear"></div>
+</div>
 <div class="footer">
   <div class="center contact">
     <div class="tel"></div>
@@ -85,7 +83,12 @@
 <div class="center copy">© 2012 杭州校聚科技有限公司 hixiao.com 保留一切权利。 浙ICP备12028505号</div>
 <div class="layoutBg"></div>
 <div class="layFrame closeArea"></div>
-<div class="goTop"></div>
-<div class="quickContact"></div>
+<script type="text/javascript" src="../js/masonry.min.js"></script>
+<script type="text/javascript">
+$('#myCollect').masonry({
+  itemSelector: '.box',
+  columnWidth: 230,
+  gutterWidth:10
+});</script>
 </body>
 </html>

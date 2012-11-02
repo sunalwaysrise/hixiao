@@ -72,4 +72,9 @@ body{background:#F0F0F0}
 .searchGoods,.searchShops{width:98px;height:34px;float:left;border:none;background:#E7E6E6;cursor:pointer;color:#767676}
 .searchGoods{margin-right:3px}
 
+.page{height:40px;background:#fff}
+.page .next,.page .pre{width:110px;height:40px;line-height:40px;margin-left:5px;float:right;background:#4390C8;text-align:center;color:#fff}
+.page .pageList{float:right;width:30px;height:30px;margin:4px 0 0 5px; border:1px #F0F0F0 solid; text-align:center; line-height:30px}
+.page .next{}
+.page .pre{}
 
